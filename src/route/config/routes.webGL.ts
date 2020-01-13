@@ -1,17 +1,20 @@
 import { RouteConfig } from 'vue-router';
 
-const routes: any[] = [
+const routesWebGl: RouteConfig[] = [
     {
-        path: '/',
+        meta: { title: 'webGL' },
+        name: 'webGL',
+        path: '/webGL',
         component: () => import('@/views/WebGL/index.vue'),
         children: [
             {
-                path: '/lesson1',
+                meta: { title: 'lesson1', parent: 'webGL' },
                 name: 'lesson1',
+                path: 'lesson1',
                 component: () => import('@/views/WebGL/lesson/1/index.vue')
             }
         ]
     }
 ];
 
-export default routes;
+export default routesWebGl;

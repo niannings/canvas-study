@@ -12,6 +12,8 @@ export default createComponent({
     onMounted(() => {
         const canvasEl: any = canvas.value;
 
+        console.log(canvasEl)
+
         init(canvasEl);
     })
 

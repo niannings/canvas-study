@@ -2,7 +2,6 @@ canvas { width: 100%; height: 100% }
 #info {
 	position: absolute;
 	top: 10px;
-	width: 100%;
 	text-align: center;
 	z-index: 100;
     display:block;
@@ -10,6 +9,16 @@ canvas { width: 100%; height: 100% }
 }
 
 .webgl-wrap {
-	width: 100%;
 	height: 100%
+}
+
+.code-container {
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: 320px;
+}
+.code-container .section {
+	height: 100%;
+	flex-basis: 50%;
 }

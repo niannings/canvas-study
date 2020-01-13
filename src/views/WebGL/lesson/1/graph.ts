@@ -218,10 +218,10 @@ function drawLine() {
 
 function drawShip(loader: GLTFLoader) {
     return new Promise<GLTF>((resolve, reject) => {
-        // loader.load( 'McLaren.glb', function ( gltf ) {
-        loader.load( 'scene.gltf', function ( gltf ) {
-            gltf.scene.scale.set(0.1, 0.1, 0.1);
-            gltf.scene.position.set(0, -1, 0);
+        loader.load( 'McLaren.glb', function ( gltf ) {
+        // loader.load( 'scene.gltf', function ( gltf ) {
+        //     gltf.scene.scale.set(0.1, 0.1, 0.1);
+        //     gltf.scene.position.set(0, -1, 0);
 
             resolve(gltf);
         }, undefined, function ( error ) {
